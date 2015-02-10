@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@color/background_color">
+
+    <!-- This xml presents to the user the service options he has and lets him
+         choose one. Created by Kostas Dimkas on 17/12/2014 -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        style="@style/title_style"
+        android:textColor="@color/foreground_text_color"
+        android:text="@string/choose_service"
+        android:id="@+id/choose_service_title"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="@color/background_color" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp">
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:id="@+id/service_spinner"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/ok_button"
+            android:id="@+id/choose_service_button" />
+    </LinearLayout>
+
+</LinearLayout>

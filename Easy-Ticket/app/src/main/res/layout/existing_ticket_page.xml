@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <!-- This xml presents to the user his number ticket he has for a specific
+         service. Created by Kostas Dimkas at 18/12/2014 -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="30pt"
+        android:text="@string/existing_paper_title"
+        style="@style/title_style"
+        android:gravity="center"
+        android:id="@+id/existing_paper_title"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        style="@style/binded_information_style"
+        android:text="@string/service_name"
+        android:id="@+id/service_name"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/current_number_text"
+            android:id="@+id/textView10" />
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ticket_number"
+            style="@style/binded_information_style"
+            android:id="@+id/ticket_number_view" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mean_waiting_time_text"
+            android:id="@+id/textView12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="@string/waiting_time"
+            style="@style/binded_information_style"
+            android:id="@+id/mean_waiting_time_view" />
+    </LinearLayout>
+
+</LinearLayout>

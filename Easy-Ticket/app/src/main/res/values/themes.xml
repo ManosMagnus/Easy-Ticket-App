@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- The first theme used for the application. It follows the website color concept containing black
+         and white colors mainly. Created by Alex Allafi on 18/12/2014-->
+    <style name="GrayBlackActionBarTheme"
+        parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/GrayActionBar</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:button">@color/LightGrey</item>
+        <item name="android:buttonStyle">@style/DarkWhiteButtonStyle</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="GrayActionBar"
+        parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/DarkSlateGray</item>
+    </style>
+
+
+
+
+
+</resources>

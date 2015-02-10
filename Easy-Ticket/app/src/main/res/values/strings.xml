@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">EasyTicket</string>
+    <string name="action_settings">Settings</string>
+    <string name="choose_service">Επιλέξτε Υπηρεσία</string>
+    <string name="ok_button">OK</string>
+    <string name="service_name">Υπηρεσία</string>
+    <string name="ticket_number">5</string> <!-- NOT CORRECT AT THE MOMENT!! -->
+    <string name="waiting_time">3</string> <!-- NOT CORRECT AT THE MOMENT!! -->
+    <string name="register_button">Εγγραφή</string>
+    <string name="contact_title">Επικοινωνία</string>
+    <string name="contact_info">Πληροφορίες επικοινωνίας&#8230;</string> <!-- SHOULD BE CHANGED LATER!! -->
+    <string name="about_info">Πληροφορίες σχετικά με την πλατφόρμα&#8230;</string> <!-- SHOULD BE CHANGED LATER!! -->
+    <string name="existing_paper_title">Έχετε χαρτάκι για την εξής υπηρεσία:</string>
+    <string name="current_number_text">Νούμερο: </string>
+    <string name="mean_waiting_time_text">Μέσος χρόνος αναμονής:</string>
+    <string name="main_title">EasyTicket</string>
+    <string name="login_choice">Είσοδος</string>
+    <string name="register_choice">Εγγραφή</string>
+    <string name="about_choice">Σχετικά</string>
+    <string name="contact_choice">Επικοινώνια</string>
+    <string name="username_choice">Όνομα Χρήστη</string>
+    <string name="password_choice">Συνθηματικό</string>
+    <string name="loading_message">Loading&#8230;</string>
+    <string name="default_username">Όνομα χρήστη&#8230;</string>
+    <string name="default_password">Συνθηματικό&#8230;</string>
+    <string name="default_email">someone@example.com&#8230;</string>
+    <string name="about_title">Σχετικά:</string>
+    <string name="register_title">Εγγραφή</string>
+    <string name="email_choice">Email:</string>
+    <string name="not_ticket_message">Δεν έχετε χαρτάκι για κάποια υπηρεσία&#8230;</string>
+    <string name="new_ticket_message">Νέο χαρτάκι</string>
+
+</resources>

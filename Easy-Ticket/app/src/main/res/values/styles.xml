@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- The main app theme. It is overriden by a custom theme set in the themes.xml file.-->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar"></style>
+
+    <!--IMPORTANT!: Colors are set in the colors.xml file  -->
+
+    <color name="background_color">@color/black</color> <!-- The background color of the app; used everywhere -->
+    <color name="foreground_text_color">@color/white</color> <!-- The foreground color for the text everywhere -->
+    <color name="warning_color">@color/red</color>
+
+    <!-- The style of the title in every page -->
+    <style name="title_style">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">25dp</item>
+    </style>
+
+    <!-- The style used in the big first title -->
+    <style name="main_title_style">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">50dp</item>
+    </style>
+
+    <!-- The style used for information dragged from the classes -->
+    <style name="binded_information_style">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <!-- The style used for hints in an edit text field -->
+    <style name="hints_style">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <!--The DarkWhite button style -->
+    <style name="DarkWhiteButtonStyle" parent="android:style/Widget.Button" >
+        <item name="android:textColor">@color/DimGray</item>
+        <item name="android:background">@android:drawable/btn_default</item><!-- only way to change this is to change the src image -->
+    </style>
+
+
+</resources>
