@@ -26,6 +26,8 @@ public class Main extends Activity {
     public void test(){
         if(true){
             //Do nothing
+            if (true) ;
+            ///jhg
         }
     }
 
