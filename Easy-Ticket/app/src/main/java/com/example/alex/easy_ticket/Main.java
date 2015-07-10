@@ -22,7 +22,7 @@ public class Main extends Activity {
     private Button register;
     private Button about;
     private Button contact;
-
+ ///Test for GitHub
 
 
     @Override
