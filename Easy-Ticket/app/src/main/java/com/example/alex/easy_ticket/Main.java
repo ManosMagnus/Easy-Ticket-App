@@ -23,6 +23,13 @@ public class Main extends Activity {
     private Button about;
     private Button contact;
 
+    public void test(){
+        if(true){
+            //Do nothing
+        }
+    }
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
