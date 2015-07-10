@@ -23,14 +23,6 @@ public class Main extends Activity {
     private Button about;
     private Button contact;
 
-    public void test(){
-        if(true){
-            //Do nothing
-            if (true) ;
-            ///jhg
-        }
-    }
-
 
 
     @Override
