@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import org.apache.http.protocol.HttpContext;
+
 import java.io.IOException;
 import java.net.CookieStore;
 import java.net.URISyntaxException;
@@ -45,9 +47,10 @@ public class LoginActivity extends Activity{
                 Connection connection = new Connection();
 
                 try {
-                    connection.validation(usernameText.getText().toString(), passwordText.getText().toString());
+                    HttpContext ctx = connection.validation(usernameText.getText().toString(), passwordText.getText().toString());
                     Intent intent = new Intent(LoginActivity.this, ChooseService.class); //Create a new intent
                     startActivity(intent); //Start the intent
+                    Log.e("log_cat","HELLOOOO");
                 } catch (IOException e) {
                     loginMsg.setVisibility(View.VISIBLE);
                     e.printStackTrace();
