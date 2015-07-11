@@ -22,7 +22,7 @@
     <string name="contact_choice">Επικοινώνια</string>
     <string name="username_choice">Όνομα Χρήστη</string>
     <string name="password_choice">Συνθηματικό</string>
-    <string name="loading_message">Loading&#8230;</string>
+    <string name="loading_message">Λάθος όνομα χρήστη ή κωδικού προσβάσης&#8230;</string>
     <string name="default_username">Όνομα χρήστη&#8230;</string>
     <string name="default_password">Συνθηματικό&#8230;</string>
     <string name="default_email">someone@example.com&#8230;</string>

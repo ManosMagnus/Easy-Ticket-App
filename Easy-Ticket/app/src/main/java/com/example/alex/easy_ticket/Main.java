@@ -1,13 +1,23 @@
 package com.example.alex.easy_ticket;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.StrictMode;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
+import org.apache.http.cookie.Cookie;
 import org.json.JSONArray;
+
+import java.io.IOException;
+import java.net.CookieStore;
+import java.net.URISyntaxException;
 
 
 /**
@@ -27,6 +37,7 @@ public class Main extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.e("log_cat", "BOOOOOOM");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -51,9 +62,8 @@ public class Main extends Activity {
              */
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.login_page);
-                /*Intent intent = new Intent(Main.this, LoginActivity.class); //Create a new intent
-                startActivity(intent); //Start the intent*/
+                Intent intent = new Intent(Main.this, LoginActivity.class); //Create a new intent
+                startActivity(intent); //Start the intent
             }
         });
 
@@ -66,9 +76,9 @@ public class Main extends Activity {
              */
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.register_page);
-                /*Intent intent = new Intent(Main.this, RegisterActivity.class); //Create a new intent
-                startActivity(intent);*/
+                //setContentView(R.layout.register_page);
+                Intent intent = new Intent(getApplicationContext(), RegisterActivity.class); //Create a new intent
+                startActivity(intent);
             }
         });
 
@@ -81,9 +91,9 @@ public class Main extends Activity {
              */
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.info_page);
-                /*Intent intent = new Intent(Main.this, AboutActivity.class); //Create a new intent
-                startActivity(intent);*/
+                //setContentView(R.layout.info_page);
+                Intent intent = new Intent(getApplicationContext(), AboutActivity.class); //Create a new intent
+                startActivity(intent);
             }
         });
 
@@ -96,29 +106,26 @@ public class Main extends Activity {
              */
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.contact_page);
-               /* Intent intent = new Intent(Main.this, ContactActivity.class); //Create a new intent
-                startActivity(intent);*/
+                //setContentView(R.layout.contact_page);
+                Intent intent = new Intent(getApplicationContext(), ContactActivity.class); //Create a new intent
+                startActivity(intent);
             }
         });
 
 
 
 
-
-        //new connectionTask().execute(new ApiConnector());
-
     }
-
-
-    private class connectionTask extends AsyncTask<ApiConnector,Long,JSONArray> {
-        @Override
-        protected JSONArray doInBackground(ApiConnector... params) {
-
-            // it is executed on Background thread
-
-            return params[0].connection();
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == android.view.KeyEvent.KEYCODE_BACK) {
+            setContentView(R.layout.activity_main);
+            onCreate(null);
+            return true;
         }
+
+        return super.onKeyDown(keyCode, event);
     }
+
 
 }
