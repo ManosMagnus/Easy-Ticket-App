@@ -24,6 +24,9 @@ public class LoginActivity extends Activity{
     private EditText usernameText;
     private EditText passwordText;
     private TextView loginMsg;
+    private HttpContext ctx;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -47,24 +50,31 @@ public class LoginActivity extends Activity{
                 Connection connection = new Connection();
 
                 try {
-                    HttpContext ctx = connection.validation(usernameText.getText().toString(), passwordText.getText().toString());
+                    ctx = connection.validation(usernameText.getText().toString(), passwordText.getText().toString());
                     Intent intent = new Intent(LoginActivity.this, ChooseService.class); //Create a new intent
                     startActivity(intent); //Start the intent
-                    Log.e("log_cat","HELLOOOO");
                 } catch (IOException e) {
                     loginMsg.setVisibility(View.VISIBLE);
                     e.printStackTrace();
-                    Log.e("log_cat", "Destroy");} catch (URISyntaxException e) {
+                    Log.e("log_cat", "Destroy");
+                } catch (URISyntaxException e) {
                     e.printStackTrace();
                 }
 
             }
         });
 
+    }
 
-
+    public HttpContext getCtx() {
+        return  ctx;
     }
 
 
 
+
 }
+
+
+
+

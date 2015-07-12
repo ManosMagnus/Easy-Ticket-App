@@ -27,7 +27,7 @@ public class ChooseService extends Activity {
         List<String> list;
 
         list = new ArrayList<String>();
-        list.add("Pereus Bank");
+        list.add("Piraeus Bank");
         list.add("Eurobank");
         adapter = new ArrayAdapter<String>(getApplicationContext(),
                 android.R.layout.simple_spinner_item, list);
