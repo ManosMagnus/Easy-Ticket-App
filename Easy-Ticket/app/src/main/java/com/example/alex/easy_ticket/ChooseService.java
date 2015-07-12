@@ -100,7 +100,7 @@ public class ChooseService extends Activity {
     }
 
     private void connection(String choice) throws IOException, URISyntaxException {
-        URI url = new URI("http://www.easy-ticket.gr/choose_service.php");
+        URI url = new URI("http://www.easy-ticket.gr/validate_choose_service.php");
 
         Log.e("log_cat",url.getHost() + url.getRawPath());
 
