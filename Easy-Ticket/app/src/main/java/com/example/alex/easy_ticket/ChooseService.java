@@ -38,12 +38,12 @@ import java.util.List;
  */
 public class ChooseService extends Activity {
 
-
     private static final String USER_AGENT = "Magic Agent" ;
 
     private HttpContext ctx;
     private Spinner spinner;
     private Button okButton;
+
 
 
     @Override

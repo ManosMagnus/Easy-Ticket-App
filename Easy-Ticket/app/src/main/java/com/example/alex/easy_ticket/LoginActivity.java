@@ -26,6 +26,8 @@ public class LoginActivity extends Activity{
     private TextView loginMsg;
     private HttpContext ctx;
 
+    private String Test;//Teeeest for git
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
