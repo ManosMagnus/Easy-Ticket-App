@@ -3,45 +3,48 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1"
-    android:background="@color/background_color">
+    android:background="@color/MidnightBlue"
+    >
 
     <!-- This xml presents to the user the service options he has and lets him
-         choose one. Created by Kostas Dimkas on 17/12/2014 -->
+         choose one. Created by Kostas Dimkas on 17/12/2014
+         Modified by Evan Daravigkas on 12/07/2015.-->
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="80dp"
         style="@style/title_style"
-        android:textColor="@color/foreground_text_color"
+        android:textColor="#ffffcc18"
         android:text="@string/choose_service"
         android:id="@+id/choose_service_title"
         android:layout_gravity="center_horizontal"
         android:gravity="center"
-        android:background="@color/background_color" />
+        android:background="@color/MidnightBlue" />
 
     <LinearLayout
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp">
-        android:la
 
 
         <Spinner
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/gray"
             android:id="@+id/service_spinner"
-            android:layout_weight="1"
-            android:entries="@array/items"
             android:spinnerMode="dropdown" />
+
     </LinearLayout>
 
     <Button
-        android:layout_width="fill_parent"
-        android:layout_marginTop="50dp"
+        android:layout_width="55dp"
         android:layout_height="wrap_content"
         android:text="@string/ok_button"
-        android:id="@+id/choose_service_button" />
+        android:id="@+id/choose_service_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:textColor="#ff0c0c0c"
+        android:textStyle="bold" />
 
 </LinearLayout>
