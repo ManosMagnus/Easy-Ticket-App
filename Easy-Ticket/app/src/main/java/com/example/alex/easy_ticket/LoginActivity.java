@@ -51,8 +51,9 @@ public class LoginActivity extends Activity{
 
                 try {
                     ctx = connection.validation(usernameText.getText().toString(), passwordText.getText().toString());
-                    Intent intent = new Intent(LoginActivity.this, ChooseService.class); //Create a new intent
+                    Intent intent = new Intent(LoginActivity.this,ChooseService.class); //Create a new intent
                     startActivity(intent); //Start the intent
+                    //ChooseService chooseService = new ChooseService(ctx);
                 } catch (IOException e) {
                     loginMsg.setVisibility(View.VISIBLE);
                     e.printStackTrace();

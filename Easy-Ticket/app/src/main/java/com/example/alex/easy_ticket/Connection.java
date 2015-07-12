@@ -27,16 +27,12 @@ import java.util.List;
 /**
  * Created by manos on 11/7/2015.
  */
-public class Connection {
+public  class Connection {
 
 
     private static final String USER_AGENT = "Magic Agent" ;
+    private static HttpContext ctx;
 
-    public void Connection(){
-;
-
-
-    }
 
     public HttpContext validation(String username, String password) throws IOException, URISyntaxException {
         URI url = new URI("http://www.easy-ticket.gr/validate_login_home.php");
@@ -92,12 +88,13 @@ public class Connection {
             }
         }
 
-        HttpContext ctx = new BasicHttpContext();
-        ctx.setAttribute(ClientContext.COOKIE_STORE, store);
-
         return ctx;
 
 
+    }
+
+    public static HttpContext getCtx(){
+        return ctx;
     }
 
 
