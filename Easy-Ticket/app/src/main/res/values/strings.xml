@@ -20,16 +20,22 @@
     <string name="register_choice">Εγγραφή</string>
     <string name="about_choice">Σχετικά</string>
     <string name="contact_choice">Επικοινώνια</string>
-    <string name="username_choice">Όνομα Χρήστη</string>
-    <string name="password_choice">Συνθηματικό</string>
-    <string name="loading_message">Λάθος όνομα χρήστη ή κωδικού προσβάσης&#8230;</string>
+    <string name="username_choice">Όνομα Χρήστη:</string>
+    <string name="surname_choice">Επώνυμο:</string>
+    <string name="name_choice">Όνομα:</string>
+    <string name="email_ver_choice">Επιβεβαίωση Email:</string>
+    <string name="password_choice">Συνθηματικό:</string>
+    <string name="password_ver_choice">Επιβεβαίωση Συνθηματικού:</string>
+    <string name="loading_message">Loading&#8230;</string>
+    <string name="default_surname">Επώνυμο&#8230;</string>
+    <string name="default_name">Όνομα&#8230;</string>
     <string name="default_username">Όνομα χρήστη&#8230;</string>
     <string name="default_password">Συνθηματικό&#8230;</string>
+    <string name="default_password_ver">Επιβεβαίωση&#8230;</string>
     <string name="default_email">someone@example.com&#8230;</string>
     <string name="about_title">Σχετικά:</string>
     <string name="register_title">Εγγραφή</string>
     <string name="email_choice">Email:</string>
     <string name="not_ticket_message">Δεν έχετε χαρτάκι για κάποια υπηρεσία&#8230;</string>
     <string name="new_ticket_message">Νέο χαρτάκι</string>
-
 </resources>

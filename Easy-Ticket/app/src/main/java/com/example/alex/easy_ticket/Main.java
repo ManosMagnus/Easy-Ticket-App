@@ -46,11 +46,19 @@ public class Main extends Activity {
             StrictMode.setThreadPolicy(policy);
         }
 
-        //Get the buttons by their IDs
+        //Get the buttons by their IDs and also modify their colors
         this.login = (Button) findViewById(R.id.loginButton1);
+        login.getBackground().setColorFilter(0xffffcc18, PorterDuff.Mode.MULTIPLY);
+
         this.register = (Button) findViewById(R.id.registrationButton1);
+        register.getBackground().setColorFilter(0xffffcc18, PorterDuff.Mode.MULTIPLY);
+
         this.about = (Button) findViewById(R.id.aboutButton1);
+        about.getBackground().setColorFilter(0xffffcc18, PorterDuff.Mode.MULTIPLY);
+
         this.contact = (Button) findViewById(R.id.contactButton1);
+        contact.getBackground().setColorFilter(0xffffcc18, PorterDuff.Mode.MULTIPLY);
+
 
 
         //Set the loginButton listener

@@ -4,17 +4,19 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1"
-    android:background="@color/background_color">
+    android:background="@color/MidnightBlue">
 
     <!-- This xml represents a login form. Created by Kirtas Manolis at 17/12/2014
-         Modified by Alex Allafi at 18/12/2014 -->
+         Modified by Alex Allafi at 18/12/2014
+         Modified by Evan Daravigkas on 12/07/2015.-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="96dp"
         android:text="@string/login_choice"
         style="@style/title_style"
         android:id="@+id/textView"
-        android:gravity="center" />
+        android:gravity="center"
+        android:textColor="#ffffcc18" />
 
     <GridLayout
         android:layout_width="wrap_content"
@@ -33,7 +35,8 @@
             android:id="@+id/username"
             android:layout_columnSpan="1"
             android:layout_row="0"
-            android:layout_column="0" />
+            android:layout_column="0"
+            android:textColor="#ffffcc18" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -43,14 +46,16 @@
             android:inputType="textPersonName"
             android:layout_row="0"
             android:layout_column="1"
-            android:ems="10"/>
+            android:ems="10"
+            android:textColor="#ffffcc18" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/password_choice"
             android:id="@+id/passwordTextView"
             android:layout_row="1"
-            android:layout_column="0" />
+            android:layout_column="0"
+            android:textColor="#ffffcc18" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -61,27 +66,30 @@
             android:id="@+id/password_view"
             android:layout_row="1"
             android:layout_column="1"
-            android:ems="10"/>
+            android:ems="10"
+            android:textColor="#ffffcc18" />
 
 
 
     </GridLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/loading_message"
-        android:gravity="center"
-        android:id="@+id/loading_message"
-        android:layout_gravity="center_horizontal"
-        android:textColor="@color/warning_color" />
-
     <Button
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="@string/login_choice"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:id="@+id/login_button"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#ff000000" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/loading_message"
+        android:gravity="center"
+        android:id="@+id/loading_message"
+        android:textColor="@color/warning_color" />
+
 </LinearLayout>

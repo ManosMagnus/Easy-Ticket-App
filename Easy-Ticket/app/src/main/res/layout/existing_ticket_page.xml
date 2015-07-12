@@ -2,10 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black">
+    android:background="@color/MidnightBlue">
 
     <!-- This xml presents to the user his number ticket he has for a specific
-         service. Created by Kostas Dimkas at 18/12/2014 -->
+         service. Created by Kostas Dimkas at 18/12/2014
+         Modified by Evan Daravigkas on 12/07/2015. -->
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="30pt"
@@ -13,7 +14,8 @@
         style="@style/title_style"
         android:gravity="center"
         android:id="@+id/existing_paper_title"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffcc18" />
 
     <TextView
         android:layout_marginTop="20dp"
@@ -23,7 +25,8 @@
         style="@style/binded_information_style"
         android:text="@string/service_name"
         android:id="@+id/service_name"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffcc18" />
 
     <LinearLayout
         android:layout_marginTop="20dp"
@@ -37,7 +40,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/current_number_text"
-            android:id="@+id/textView10" />
+            android:id="@+id/textView10"
+            android:textColor="#ffffcc18" />
 
         <TextView
             android:layout_marginLeft="30dp"
@@ -45,7 +49,8 @@
             android:layout_height="wrap_content"
             android:text="@string/ticket_number"
             style="@style/binded_information_style"
-            android:id="@+id/ticket_number_view" />
+            android:id="@+id/ticket_number_view"
+            android:textColor="#ffffcc18" />
     </LinearLayout>
 
     <LinearLayout
@@ -60,7 +65,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/mean_waiting_time_text"
-            android:id="@+id/textView12" />
+            android:id="@+id/textView12"
+            android:textColor="#ffffcc18" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -68,7 +74,8 @@
             android:layout_marginLeft="30dp"
             android:text="@string/waiting_time"
             style="@style/binded_information_style"
-            android:id="@+id/mean_waiting_time_view" />
+            android:id="@+id/mean_waiting_time_view"
+            android:textColor="#ffffcc18" />
     </LinearLayout>
 
 </LinearLayout>
