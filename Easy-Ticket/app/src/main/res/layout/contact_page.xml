@@ -2,10 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_color">
+    android:background="@color/MidnightBlue">
 
     <!-- This xml contains the basic contact information for the developers
-         of the app. Created by Kostas Dimkas on 17/12/2014 -->
+         of the app. Created by Kostas Dimkas on 17/12/2014
+         Modified by Evan Daravigkas on 12/07/2015.-->
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="80dp"
@@ -13,14 +14,16 @@
         android:text="@string/contact_title"
         android:gravity="center"
         android:id="@+id/contact_title"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffcc18" />
 
     <TextView
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="@string/contact_info"
-        android:textColor="@color/foreground_text_color"
+        android:textColor="#ffffcc18"
         android:gravity="center"
         android:id="@+id/contact_info"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp" />
 </LinearLayout>
