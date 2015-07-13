@@ -51,7 +51,7 @@ public class ChooseService extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.choose_service_page);
 
-        Log.e("log_cat", Connection.getCtx().toString());
+      //  Log.e("log_cat", Connection.getCtx().toString());
         spinner = (Spinner) findViewById(R.id.service_spinner);
 
         okButton = (Button) findViewById((R.id.choose_service_button));
@@ -68,6 +68,8 @@ public class ChooseService extends Activity {
             public void onClick(View view) {
                 try {
                     connection(serviceChoosen(spinner.getSelectedItem().toString()));
+                    Intent intent = new Intent(ChooseService.this,ExistingTicketActicity.class); //Create a new intent
+                    startActivity(intent); //Start the intent
                 } catch (IOException e) {
                     e.printStackTrace();
                 } catch (URISyntaxException e) {
@@ -99,10 +101,9 @@ public class ChooseService extends Activity {
         ctx = ctxN;
     }
 
-    private void connection(String choice) throws IOException, URISyntaxException {
+    private void connection(String service) throws IOException, URISyntaxException {
         URI url = new URI("http://www.easy-ticket.gr/validate_choose_service.php");
 
-        Log.e("log_cat",url.getHost() + url.getRawPath());
 
         StringBuffer buffer = new StringBuffer();
 
@@ -111,24 +112,21 @@ public class ChooseService extends Activity {
 
 
         List<NameValuePair> nvList = new ArrayList<NameValuePair>();
+        BasicNameValuePair usvp = new BasicNameValuePair("service", service);
 
-        BasicNameValuePair chvp = new BasicNameValuePair("service", choice);
 
-        nvList.add(chvp);
+        nvList.add(usvp);
 
-        post.setHeader("User-Agent", USER_AGENT);
+
+
+        post.setHeader("User-Agent", "DOOM");
+
         post.setEntity(new UrlEncodedFormEntity(nvList));
 
 
-        HttpResponse resp = client.execute(post,Connection.getCtx());
+        HttpResponse resp = client.execute(post);
 
-
-
-
-
-        Log.e("log_cat", "Doooooom");
-
-
+        System.out.println(resp.toString());
 
         InputStream is  = resp.getEntity().getContent();
         BufferedReader reader = new BufferedReader(new InputStreamReader(is));
@@ -140,26 +138,24 @@ public class ChooseService extends Activity {
         is.close();
         buffer.append(str.toString());
 
-        Log.e("log_cat", str.toString());
 
-        Log.e("log_cat", "STOP!");
+        System.out.println(buffer);
+
+
         CookieStore store = ((DefaultHttpClient) client).getCookieStore();
 
         List<Cookie> cookies = store.getCookies();
         if (cookies != null) {
             for (Cookie c : cookies) {
 
-                Log.e("log_cat",c.getName() + " |||| " + c.getValue());
+                System.out.println(c.getName() + " |||| " + c.getValue());
                 store.addCookie(c);
             }
         }
 
-        Log.e("log_cat", "STOP2!");
-
-        ctx = new BasicHttpContext();
-        ctx.setAttribute(ClientContext.COOKIE_STORE, store);
-
     }
+
+
 
 
 

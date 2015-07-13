@@ -54,13 +54,14 @@ public class RegisterActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register_page);
-
+/*
+        registerMsg=(TextView) findViewById(R.id.mean_waiting_time);
+        notValidEmailMsg=(TextView) findViewById(R.id.mean_waiting_time);
+        notEqualPasswordsMsg=(TextView) findViewById(R.id.mean_waiting_time);
+        notEqualEmailsMsg=(TextView) findViewById(R.id.mean_waiting_time);
         this.register.setOnClickListener(new View.OnClickListener() {
 
-            /**
-             * When clicked should set the application content view to the register_page
-             * @param view  the view that calls the function
-             */
+
             @Override
             public void onClick(View view) {
                 if (!checkPasswords(pass, conf_pass))
@@ -70,11 +71,12 @@ public class RegisterActivity extends Activity {
                     EmailValidator emailValidator = new EmailValidator();
                     if (!emailValidator.validate(email.getText().toString()))
                         notValidEmailMsg.setVisibility(View.VISIBLE);
-                }
-                else
+                } else
                     notEqualEmailsMsg.setVisibility(View.VISIBLE);
             }
         });
+*/
+
     }
 
 

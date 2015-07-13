@@ -76,6 +76,28 @@
             style="@style/binded_information_style"
             android:id="@+id/mean_waiting_time_view"
             android:textColor="#ffffcc18" />
+
+
+
     </LinearLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Νεο χαρτάκι"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal" />
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Εχέτε το νουμερο 5"
+        style="@style/binded_information_style"
+        android:id="@+id/mean_waiting_time"
+        android:layout_gravity="center_horizontal" />
+        android:textColor="#ffffcc18" />
 
 </LinearLayout>

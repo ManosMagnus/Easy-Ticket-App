@@ -69,6 +69,9 @@ public class LoginActivity extends Activity{
 
     }
 
+
+
+
     public HttpContext getCtx() {
         return  ctx;
     }

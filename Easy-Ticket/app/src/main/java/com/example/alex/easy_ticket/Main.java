@@ -2,6 +2,7 @@ package com.example.alex.easy_ticket;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.PorterDuff;
 import android.os.AsyncTask;
 import android.os.StrictMode;
 import android.os.Bundle;
@@ -85,7 +86,7 @@ public class Main extends Activity {
             @Override
             public void onClick(View view) {
                 //setContentView(R.layout.register_page);
-                Intent intent = new Intent(getApplicationContext(), RegisterActivity.class); //Create a new intent
+                Intent intent = new Intent(Main.this, RegisterActivity.class); //Create a new intent
                 startActivity(intent);
             }
         });
